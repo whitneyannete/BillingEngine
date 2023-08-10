@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back to Settings</title>
     <link rel="stylesheet" href="./dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="//unpkg.com/alpinejs" defer></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="w-[100%] h-[100%] relative bg-white">
+  <div class="w-[100%] h-[100%] relative bg-white  font-inter">
     <!-- nav -->
   <div class="  w-[81%] left-[19%] top-[32px] absolute flex-col justify-start items-start gap-6 inline-flex">
     <div class="self-stretch px-8 flex-col justify-start items-start gap-6 flex">
@@ -44,7 +44,8 @@
             <div class="self-stretch h-11 flex-col justify-start items-start gap-1.5 flex">
               <div class="self-stretch px-3.5 py-2.5 bg-white rounded-lg shadow border border-gray-300 justify-start items-center gap-2 inline-flex">
                 <div class="grow shrink basis-0 h-6 justify-start items-center gap-2 flex">
-                  <div class="w-5 h-5 relative"></div>
+                  <div class="w-5 h-5 relative"><img src="src/Assets/search.png" alt="">
+                  </div>
                   <div class="text-gray-500 text-base font-normal leading-normal">Search</div>
                 </div>
               </div>
@@ -183,36 +184,36 @@
             <div class="self-stretch h-[72px] p-4 border-b border-gray-200 justify-end items-center gap-1 inline-flex">
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 absolute">
-                  <img src="src/Assets/PenIcon.png" alt="pen">
+                  <img src="src/Assets/EditIcon.png" alt="Edit">
                 </div>
               </div>
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 ">
-                  <img src="src/Assets/EyeIcon.png" alt="pen">
+                  <img src="src/Assets/VeiwIcon.png" alt="veiw">
                 </div>
               </div>
             </div>
             <div class="self-stretch h-[72px] p-4 border-b border-gray-200 justify-end items-center gap-1 inline-flex">
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 absolute">
-                  <img src="src/Assets/PenIcon.png" alt="pen">
+                  <img src="src/Assets/EditIcon.png" alt="Edit">
                 </div>
               </div>
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 relative">
-                  <img src="src/Assets/EyeIcon.png" alt="pen">
+                  <img src="src/Assets/VeiwIcon.png" alt="veiw">
                 </div>
               </div>
             </div>
             <div class="self-stretch h-[72px] p-4 border-b border-gray-200 justify-end items-center gap-1 inline-flex">
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 absolute">
-                  <img src="src/Assets/PenIcon.png" alt="pen">
+                  <img src="src/Assets/EditIcon.png" alt="Edit">
                 </div>
               </div>
               <div class="p-2.5 rounded-lg justify-center items-center gap-2 flex">
                 <div class="w-5 h-5 relative">
-                  <img src="src/Assets/EyeIcon.png" alt="pen">
+                  <img src="src/Assets/VeiwIcon.png" alt="veiw">
                 </div>
               </div>
             </div>
@@ -253,7 +254,7 @@
     <!-- Mobile Table -->
 
     <!--1-->
-    <div class=" divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-60 ml-[23%] ">
+    <div class=" divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8 ">
       <div x-data="{isOpen:false}" class="divide-y divide-gray-200">
 
           <!-- Title -->
@@ -347,7 +348,7 @@
       
 </div>
 <!--2-->
-<div class="mt-6 divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-60 ml-[23%]">
+<div class="mt-6 divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8">
   <div x-data="{isOpen:false}" class="divide-y divide-gray-200">
 
       <!-- Title -->
@@ -441,7 +442,7 @@
   
 </div>
 <!--3-->
-<div class="mt-6 divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-60 ml-[23%]">
+<div class="mt-6 divide-y divide-gray-300  lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8">
   <div x-data="{isOpen:false}" class="divide-y divide-gray-200">
 
       <!-- Title -->
@@ -526,7 +527,7 @@
                           </clipPath>
                       </defs>
                   </svg>
-              </button>
+              </button>s
           </div>
       </div>
 
@@ -534,7 +535,34 @@
   <div x-data="{isOpen:false}" class="divide-y divide-gray-200"></div>
   
 </div>
-    
+<div class="mt-6 py-6 px-4 lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8 flex gap-4">
+<div class="h-9 justify-start items-center gap-3 flex">
+  <div class="self-stretch justify-start items-center gap-3 flex">
+    <div class="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+      <div class="self-stretch h-9 flex-col justify-start items-start gap-1.5 flex">
+        <div class="self-stretch px-3.5 py-1.5 bg-white rounded-lg shadow border border-gray-300 justify-start items-center gap-2 inline-flex">
+          <div class="grow shrink basis-0 h-6 justify-start items-center  flex">
+            <div class="text-gray-900 text-base font-medium leading-normal">10</div>
+          </div>
+          <div class="w-4 h-4 relative align-top -mt-3">
+            <img src="src/Assets/chevronDown.png" alt="" class="rotate-180">
+            <img src="src/Assets/chevronDown.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-slate-700 text-sm font-medium leading-tight">Entries Per Page</div>
+</div>
+<div class="justify-start items-start gap-3 flex">
+  <div class="px-3.5 py-2 bg-white rounded-lg shadow border border-gray-300 justify-center items-center gap-2 flex">
+    <div class="text-slate-700 text-sm font-semibold leading-tight">Previous</div>
+  </div>
+  <div class="px-3.5 py-2 bg-white rounded-lg shadow border border-gray-300 justify-center items-center gap-2 flex">
+    <div class="text-slate-700 text-sm font-semibold leading-tight">Next</div>
+  </div>
+</div>
+</div> 
   
   <!-- Dashboard -->
   <div class=" w-[18%] h-[100%] bg-white  justify-start items-start inline-flex border-r border-gray-200">
