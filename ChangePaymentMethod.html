@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChangePaymentMethod</title>
     <link rel="stylesheet" href="./dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="//unpkg.com/alpinejs" defer></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body><!--
 <div class="w-[600px] h-[464px] bg-white rounded-xl shadow flex-col justify-start items-start inline-flex">
@@ -60,44 +61,35 @@
     </div>
   </div>-->
   
-  <div class="px-4 sm:px-6 lg:px-8">
-    <div class="sm:flex sm:items-center">
-      <div class="sm:flex-auto">
-        <h1 class="text-base font-semibold leading-6 text-gray-900">Users</h1>
-        <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email and role.</p>
-      </div>
-      <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-        <button type="button" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add user</button>
-      </div>
+  <div class="font-inter py-6  w-[100%]">
+    <div class="mb-5 px-6">
+        <h1 class="text-lg font-semibold text-[#101828] mb-1">Change Payment Method</h1>
+        <p class="text-sm font-normal text-[#475467]">Change payment card details</p>
     </div>
-    <div class="-mx-4 mt-8 sm:-mx-0">
-      <table class="min-w-full divide-y divide-gray-300">
-        <thead>
-          <tr>
-            <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Name</th>
-            <th scope="col" class="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell">Title</th>
-            <th scope="col" class="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell">Email</th>
-            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Role</th>
-            <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
-              <span class="sr-only">Edit</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200 bg-white">
-          <tr>
-            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Lindsay Walton</td>
-            <td class="hidden whitespace-nowrap px-3 py-4 text-sm text-gray-500 sm:table-cell">Front-end Developer</td>
-            <td class="hidden whitespace-nowrap px-3 py-4 text-sm text-gray-500 lg:table-cell">lindsay.walton@example.com</td>
-            <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
-            <td class="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-              <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
-            </td>
-          </tr>
-  
-          <!-- More people... -->
-        </tbody>
-      </table>
+    <div class="py-6 border-t border-gray-200">
+        <div class="mb-5 px-6">
+            <label for="full-name" class=" text-[#344054] text-sm font-medium block ">Account Name</label>
+            <input type="text" id="full-name" class="bg-[#FFF]  border border-solid border-[#D0D5DD] rounded-lg w-full px-[14px] py-[6px]" >
+        </div>
+        <div class="mb-5 px-6">
+            <label for="phone" class=" text-[#344054] text-sm font-medium block">Card Number</label>
+            <input type="tel" id="phone" class="bg-[#FFF]  border border-solid border-[#D0D5DD] rounded-lg w-full px-[14px] py-[6px]" >
+        </div>
+        <div class="mb-5 px-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="w-full">
+              <label for="email" class=" text-[#344054] text-sm font-medium block">Expiry Date</label>
+            <input type="email" id="email" class="bg-[#FFF]  border border-solid border-[#D0D5DD] rounded-lg w-full px-[14px] py-[6px] " >
+          </div>
+            <div class="justify-end w-full">
+              <label for="email" class=" text-[#344054] text-sm font-medium block">CVV</label>
+            <input type="email" id="email" class="bg-[#FFF]  border border-solid border-[#D0D5DD] rounded-lg w-full px-[14px] py-[6px]" >
+          </div>
+        </div>
     </div>
-  </div>
+    <div class="font-semibold flex flex-row gap-3 justify-end items-end self-stretch px-6">
+        <button class="  text-[#344054] text-sm px-8 py-[10px] bg-[#FFF]  border border-solid border-[#D0D5DD] rounded-lg bg-[rgba(16, 24, 40, 0.05)];">Cancel</button>
+        <button class=" text-[#FFF]  px-8 py-[10px]  border-solid   bg-blue-700 rounded-lg shadow border border-blue-700;">Update</button>
+    </div>    
+</div>
   
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Back to Settings</title>
+    <title>COLLECTION SCHEMES</title>
     <link rel="stylesheet" href="./dist/output.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +21,10 @@
         <div class="text-blue-700 text-sm font-semibold leading-tight">Back to settings</div>
       </div>
       <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
-        <div class="self-stretch justify-start items-start gap-4 inline-flex">
+        <div class="self-stretch justify-start items-start gap-4 inline-flex border-b border-gray-200 pb-5">
           <div class="grow shrink basis-0 flex-col justify-start items-start gap-1 inline-flex">
             <div class="self-stretch text-gray-900 text-3xl font-semibold leading-[38px]">Collection Schemes</div>
-            <div class="self-stretch text-slate-600 text-base font-normal leading-normal">Lörem ipsum tin ses. Talpenna retrenera tinening semitris. Rod karosam, kvasir antev. </div>
+            <div class="self-stretch text-slate-600 text-sm  sm:text-base font-normal leading-normal">Lörem ipsum tin ses. Talpenna retrenera tinening semitris. Rod karosam, kvasir antev. </div>
           </div>
           <div class="justify-start items-center gap-3 flex">
             <div class="px-4 py-2.5 bg-blue-700 rounded-lg shadow border border-blue-700 justify-center items-center gap-2 flex">
@@ -36,7 +36,7 @@
     </div>
   </div>
   <!-- Table -->
-  <div class=" w-[81%]  px-8 left-[19%] top-[195px] absolute flex-col justify-start items-start gap-6 inline-flex">
+  <div class=" w-[81%]  px-8 left-[19%] top-[195px] absolute flex-col justify-start items-start gap-6 inline-flex ">
     <div class="self-stretch  flex-col justify-start items-start gap-6 flex hidden lg:block">
       <div class="self-stretch h-11 flex-col justify-start items-start gap-5 flex ">
         <div class="self-stretch justify-start items-start gap-4 inline-flex">
@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="self-stretch h-[324px] bg-white rounded-xl shadow border border-gray-200 flex-col justify-start items-start flex mt-6">
+      <div class="self-stretch h-[324px] bg-white shadow border border-gray-300 flex-col justify-start items-start flex mt-6 rounded-lg">
         <div class="self-stretch bg-white justify-start items-start inline-flex">
           <!-- name -->
           <div class="w-[14%] flex-col justify-start items-start inline-flex ">
@@ -261,7 +261,7 @@
           <div @click="isOpen = !isOpen" x-bind:class="{'bg-gray-100 hover:bg-gray-100': isOpen,}"
               class="flex justify-between w-full hover:cursor-pointer items-center gap-4 px-4 py-4 hover:bg-gray-50 border-transparent rounded-tl-lg rounded-tr-lg hover:rounded-br-lg hover:rounded-bl-lg transition-all ease-in-out duration-200">
               <div class="whitespace-nowrap py-1  text-sm font-medium text-gray-900 ">
-                Rent Collection
+                Monthly Chama
                   
               </div>
               <button class="text-gray-700 hover:text-gray-900">
@@ -274,30 +274,36 @@
           </div>
           <div x-show="isOpen" x-cloak x-transition:enter="ease-out duration-200"
               x-transition:enter-start="-translate-y-2" x-transition:enter-end="translate-y-0">
-              <!-- Member since -->
+              <!-- Created -->
               <div class="flex items-start w-full justify-between py-4 px-4">
-                  <p class="text-sm font-medium leading-tight text-gray-500">Created:</p>
-                  <p class="text-sm font-medium leading-tight text-right text-gray-900">22 Jan 2022
+                  <p class="text-sm font-medium leading-tight text-gray-600">Created:</p>
+                  <p class="text-sm font-medium leading-tight text-right text-gray-600">22 Jan 2022
                   </p>
               </div>
-              <!--  Collection Schemes -->
+              <!--  No of Members -->
               <div class="flex items-start w-full justify-between py-4 px-4">
-                  <p class="text-sm font-medium leading-tight text-gray-500">No of Members </p>
-                  <p class="text-sm font-medium leading-tight text-right text-gray-900">20
-                  </p>
-              </div>
-              <!--   Arrears -->
-              <div class="flex items-start w-full justify-between py-4 px-4">
-                  <p class="text-sm font-medium leading-tight text-gray-500">Total Contributed </p>
-                  <p class="text-sm font-medium leading-tight text-right text-gray-500">KES 30 M
+                  <p class="text-sm font-medium leading-tight text-gray-600">No of Members </p>
+                  <p class="text-sm font-medium leading-tight text-right text-gray-600">20
                   </p>
               </div>
               <!--   Total Contributed -->
               <div class="flex items-start w-full justify-between py-4 px-4">
-                  <p class="text-sm font-medium leading-tight text-gray-500"> Arrears </p>
-                  <p class="text-sm font-medium leading-tight text-right text-red-500">KES 100000
+                  <p class="text-sm font-medium leading-tight text-gray-600">Total Contributed </p>
+                  <p class="text-sm font-medium leading-tight text-right text-gray-600">KES 30 M
                   </p>
               </div>
+              <!--   Arrears -->
+              <div class="flex items-start w-full justify-between py-4 px-4">
+                  <p class="text-sm font-medium leading-tight text-gray-600"> Arrears </p>
+                  <p class="text-sm font-medium leading-tight text-right text-[#D92C07]">KES 100000
+                  </p>
+              </div>
+              <!--  Status -->
+              <div class="flex items-start w-full justify-between py-4 px-4">
+                <p class="text-sm font-medium leading-tight text-gray-600"> Status </p>
+                <p class="text-sm font-medium leading-tight text-right text-emerald-700">Active
+                </p>
+            </div>
 
               <!-- Action buttons -->
               <div class="flex w-full items-center justify-end gap-3 py-4 px-4 pr-2">
@@ -368,30 +374,36 @@
       </div>
       <div x-show="isOpen" x-cloak x-transition:enter="ease-out duration-200"
           x-transition:enter-start="-translate-y-2" x-transition:enter-end="translate-y-0">
-          <!-- Member since -->
+          <!-- Created -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">Created:</p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-900">22 Jan 2022
+              <p class="text-sm font-medium leading-tight text-gray-600">Created:</p>
+              <p class="text-sm font-medium leading-tight text-right text-[#475467]">22 Jan 2022
               </p>
           </div>
-          <!--  Collection Schemes -->
+          <!-- No of Members -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">No of Members </p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-900">20
-              </p>
-          </div>
-          <!--   Arrears -->
-          <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">Total Contributed </p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-500">KES 30 M
+              <p class="text-sm font-medium leading-tight text-gray-600">No of Members </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">64
               </p>
           </div>
           <!--   Total Contributed -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500"> Arrears </p>
-              <p class="text-sm font-medium leading-tight text-right text-red-500">KES 100000
+              <p class="text-sm font-medium leading-tight text-gray-600">Total Contributed </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">KES 30 M
               </p>
           </div>
+          <!--   Arrears -->
+          <div class="flex items-start w-full justify-between py-4 px-4">
+              <p class="text-sm font-medium leading-tight text-gray-600"> Arrears </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">-
+              </p>
+          </div>
+          <!--  Status -->
+          <div class="flex items-start w-full justify-between py-4 px-4">
+            <p class="text-sm font-medium leading-tight text-gray-600"> Status </p>
+            <p class="text-sm font-medium leading-tight text-right text-emerald-700">Active
+            </p>
+        </div>
 
           <!-- Action buttons -->
           <div class="flex w-full items-center justify-end gap-3 py-4 px-4 pr-2">
@@ -449,7 +461,7 @@
       <div @click="isOpen = !isOpen" x-bind:class="{'bg-gray-100 hover:bg-gray-100': isOpen,}"
           class="flex justify-between w-full hover:cursor-pointer items-center gap-4 px-4 py-4 hover:bg-gray-50 border-transparent rounded-tl-lg rounded-tr-lg hover:rounded-br-lg hover:rounded-bl-lg transition-all ease-in-out duration-200">
           <div class="whitespace-nowrap py-1  text-sm font-medium text-gray-900 ">
-            Rent Collection
+            Family Savings
               
           </div>
           <button class="text-gray-700 hover:text-gray-900">
@@ -462,30 +474,36 @@
       </div>
       <div x-show="isOpen" x-cloak x-transition:enter="ease-out duration-200"
           x-transition:enter-start="-translate-y-2" x-transition:enter-end="translate-y-0">
-          <!-- Member since -->
+          <!-- Created -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">Created:</p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-900">22 Jan 2022
+              <p class="text-sm font-medium leading-tight text-gray-600">Created</p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">22 Jan 2022
               </p>
           </div>
-          <!--  Collection Schemes -->
+          <!--  No of Members -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">No of Members </p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-900">20
+              <p class="text-sm font-medium leading-tight text-gray-600">No of Members </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">20
+              </p>
+          </div>
+          <!-- Total Contributed -->
+          <div class="flex items-start w-full justify-between py-4 px-4">
+              <p class="text-sm font-medium leading-tight text-gray-600">Total Contributed </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">KES 30 M
               </p>
           </div>
           <!--   Arrears -->
           <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500">Total Contributed </p>
-              <p class="text-sm font-medium leading-tight text-right text-gray-500">KES 30 M
+              <p class="text-sm font-medium leading-tight text-gray-600"> Arrears </p>
+              <p class="text-sm font-medium leading-tight text-right text-gray-600">-
               </p>
           </div>
-          <!--   Total Contributed -->
-          <div class="flex items-start w-full justify-between py-4 px-4">
-              <p class="text-sm font-medium leading-tight text-gray-500"> Arrears </p>
-              <p class="text-sm font-medium leading-tight text-right text-red-500">KES 100000
-              </p>
-          </div>
+      <!--  Status -->
+      <div class="flex items-start w-full justify-between py-4 px-4">
+        <p class="text-sm font-medium leading-tight text-gray-600"> Status </p>
+        <p class="text-sm font-medium leading-tight text-right text-[#D92C07]">Active
+        </p>
+    </div>
 
           <!-- Action buttons -->
           <div class="flex w-full items-center justify-end gap-3 py-4 px-4 pr-2">
@@ -535,7 +553,7 @@
   <div x-data="{isOpen:false}" class="divide-y divide-gray-200"></div>
   
 </div>
-<div class="mt-6 py-6 px-4 lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8 flex gap-4">
+<div class="mt-6 py-6 px-4 lg:hidden border border-gray-300 shadow-sm rounded-lg relative top-64 ml-[23%] mr-8 flex gap-3  justify-between">
 <div class="h-9 justify-start items-center gap-3 flex">
   <div class="self-stretch justify-start items-center gap-3 flex">
     <div class="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
@@ -554,7 +572,7 @@
   </div>
   <div class="text-slate-700 text-sm font-medium leading-tight">Entries Per Page</div>
 </div>
-<div class="justify-start items-start gap-3 flex">
+<div class="justify-end items-end gap-3 flex">
   <div class="px-3.5 py-2 bg-white rounded-lg shadow border border-gray-300 justify-center items-center gap-2 flex">
     <div class="text-slate-700 text-sm font-semibold leading-tight">Previous</div>
   </div>
@@ -567,7 +585,8 @@
   <!-- Dashboard -->
   <div class=" w-[18%] h-[100%] bg-white  justify-start items-start inline-flex border-r border-gray-200">
   </div>
-
+  
+  
 </div>
 </body>
 </html>
